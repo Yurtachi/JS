@@ -35,11 +35,17 @@
         <p>&copy; 2023 - Todos os direitos reservados <i class="fas fa-robot"></i></p>
     </footer>
 	<script>
-			var nome = window.prompt('Qual é seu nome?')
-			window.alert('É um prazer, ' + nome + '!') //Concatenação
+			var n1 = Number.parseInt(window.prompt('Digite um numero')) //window.prompt sempre é string, por isso precisa da conversão.
+			var n2 = Number(window.prompt('Digite outro numero'))
+			
+			var soma = n1 + n2
+
+			// window.alert('A soma dos valores é ' + soma) //String(soma) para converter para string. ou nome.toString
+
+			window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`)
 
 
-
+ 
 	</script>
 
 
